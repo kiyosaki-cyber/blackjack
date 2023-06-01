@@ -1,0 +1,14 @@
+body{
+    background-image: url('../img/photo-1655159428752-c700435e9983.jpeg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    max-height:100vh ;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+  
+}
+h1{
+    text-shadow: 5px black;
+    margin-top: 5px;
+}
