@@ -11,4 +11,22 @@ body{
 h1{
     text-shadow: 5px black;
     margin-top: 5px;
+    background-color: rgb(1, 105, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button{
+    margin-top: 400px;
+    border: none;
+    border-radius: 2.5px;
+    background-color: rgb(65, 128, 3);
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: whitesmoke;
 }
