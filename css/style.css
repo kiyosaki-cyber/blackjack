@@ -1,8 +1,7 @@
 body{
-    background-image: url('../img/photo-1655159428752-c700435e9983.jpeg');
-    background-size:cover ;
-    background-repeat: no-repeat;
-    max-height:100vh ;
+    background-image: url('../img/desktop-wallpaper-textured-black-spade-ace-of-spades-iphone-thumbnail.jpg');
+    background-size: auto;
+    background-repeat: repeat-x;
     color: whitesmoke;
     font-weight: bold;
     text-align: center;
@@ -22,21 +21,17 @@ button{
     background-color: rgb(65, 128, 3);
     color: whitesmoke;
     font-weight: bold;
+    margin-right: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 p{
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: whitesmoke;
 }
-div{
-    background-image:;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 500px;
-    text-align: center;
-}
+
+
 
 
 
