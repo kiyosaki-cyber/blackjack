@@ -1,12 +1,10 @@
 //declaring the variable sum
-let firstCard  = getRandomCard()
-let secondCard = getRandomCard()
-let sum = firstCard + secondCard
+let sum = 0
 let sumEl = document.getElementById("sum-el")
 
 
 //declaring the cards variable
-let cards = [firstCard, secondCard]
+let cards = []
 let cardsEl = document.getElementById("cards-el")
 
 //displaying the message
@@ -29,6 +27,11 @@ let message =" "
 
 
 function startGame(){
+    let firstCard  = getRandomCard()
+    let secondCard = getRandomCard()
+     sum = firstCard + secondCard
+     cards = [firstCard, secondCard]
+
     renderGame()
 
  }
