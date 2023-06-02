@@ -28,13 +28,23 @@ let message =" "
   }
  }
 
-
+ //displaying the player's name and no of chips
+let  playerEl = document.getElementById("player-el")
+ player = {
+  name:"Esther Natalia:",
+  chips:"$10000"
+ }
+playerEl.textContent= player.name + " " + player.chips
 function startGame(){
-  youAreNotOutOfTheGame = true
-    let firstCard  = getRandomCard()
-    let secondCard = getRandomCard()
-     sum = firstCard + secondCard
-     cards = [firstCard, secondCard]
+  if(youAreNotOutOfTheGame == true){
+      let firstCard  = getRandomCard()
+      let secondCard = getRandomCard()
+       sum = firstCard + secondCard
+       cards = [firstCard, secondCard]
+
+    }
+  
+   
 
     renderGame()
 
