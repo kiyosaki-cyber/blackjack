@@ -6,6 +6,9 @@ let sumEl = document.getElementById("sum-el")
 //declaring the cards variable
 let cards = []
 let cardsEl = document.getElementById("cards-el")
+//declaring the booleans
+let youWONTheBlackjack = false
+let youAreNotOutOfTheGame = false
 
 //displaying the message
 
@@ -27,6 +30,7 @@ let message =" "
 
 
 function startGame(){
+  youAreNotOutOfTheGame = true
     let firstCard  = getRandomCard()
     let secondCard = getRandomCard()
      sum = firstCard + secondCard
@@ -41,11 +45,15 @@ function renderGame(){
  
  if (sum < 21)
  { message = " Do you want to draw a NEW card ?"
+   youAreNotOutOfTheGame = true
  }
  else if (sum === 21){
    message = "You WON the blackjack"
+   youWONTheBlackjack = true
+  
 }else{
    message = "YOU'RE OUT OF THE GAME!"
+   youAreNotOutOfTheGame = false
  }
 
     sumEl.textContent = "sum:" + sum 
@@ -58,11 +66,17 @@ function renderGame(){
     messageEl.textContent = message
     
 }
-function newCard(){ 
+
+function newCard(){
+  if( youWONTheBlackjack 
+    === false &&  youAreNotOutOfTheGame === true ) {
     let card= getRandomCard()
     sum += card
     cards.push(card)
     renderGame()
+    
+  }
+   
 }
 
 
